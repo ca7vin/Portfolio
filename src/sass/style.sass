@@ -1,0 +1,46 @@
+@import ./_fonts
+@import ./_icones
+@import ../../node_modules/bootstrap/scss/bootstrap.scss
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "FiraCode"
+body
+    background-color: #000
+    color: #fff
+.container
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    p
+        font-size: 3rem
+        fontweight: normal
+        letter-spacing: 0.1rem
+        text-align: center
+        overflow: hidden
+        padding: 0.5rem
+    .typed-text
+        font-weight: bold
+        color: orange
+    .cursor
+        display: inline-block
+        width: 3px
+        background-color: #ccc
+        margin-left: 0.1rem
+        animation: blink 1s infinite
+    .cursor.typing
+        animation: none
+    @keyframes blink
+        0%
+            background-color: #ccc
+        49%
+            background-color: #ccc
+        50%
+            background-color: transparent
+        99%
+            background-color: transparent
+        100%
+            background-color: #ccc    
