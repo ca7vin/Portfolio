@@ -17246,15 +17246,27 @@ textarea.form-control-lg {
 body {
   background-color: #000;
   color: #fff;
+  height: 500vh;
+  margin: 0;
 }
 
-.container {
+.workspace {
+  transform: scale(1);
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+}
+.workspace .container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container p {
+.workspace .container p {
   font-size: 3rem;
   fontweight: normal;
   letter-spacing: 0.1rem;
@@ -17262,18 +17274,57 @@ body {
   overflow: hidden;
   padding: 0.5rem;
 }
-.container .typed-text {
+.workspace .container .typed-text {
   font-weight: bold;
   color: orange;
 }
-.container .cursor {
+.workspace .container .cursor {
   display: inline-block;
   width: 3px;
   background-color: #ccc;
   margin-left: 0.1rem;
   animation: blink 1s infinite;
 }
-.container .cursor.typing {
+.workspace .container .cursor.typing {
+  animation: none;
+}
+
+.workspace2 {
+  transform: scale(1);
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+}
+.workspace2 .container2 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.workspace2 .container2 p {
+  font-size: 3rem;
+  fontweight: normal;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+.workspace2 .container2 .typed-text2 {
+  font-weight: bold;
+  color: orange;
+}
+.workspace2 .container2 .cursor2 {
+  display: inline-block;
+  width: 3px;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite;
+}
+.workspace2 .container2 .cursor2.typing2 {
   animation: none;
 }
 @keyframes blink {
