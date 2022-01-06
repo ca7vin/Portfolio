@@ -87,9 +87,9 @@ const zoomSpeed = 0.1
 
 document.addEventListener("wheel", function(e) {
     if (e.deltaY > 0) {
-        zoomElement.style.transform = `scale(${(zoom -= zoomSpeed)})`;
+        zoomElement.style.transform = `scale(${(zoom += zoomSpeed)})`;
     } else if (zoomElement.getBoundingClientRect().width >= 30){
-        zoomElement.style.transform = `scale(${(zoom += zoomSpeed)})`
+        zoomElement.style.transform = `scale(${(zoom -= zoomSpeed)})`
     }
 })
 
@@ -97,7 +97,7 @@ document.addEventListener("wheel", function(e) {
 
 const zoomElement2 = document.querySelector(".workspace2");
 let zoom2 = 1;
-const zoomSpeed2 = 0.1
+const zoomSpeed2 = -0.1
 
 document.addEventListener("wheel", function(e) {
     if (e.deltaY > 0) {
@@ -105,6 +105,7 @@ document.addEventListener("wheel", function(e) {
     } else if (zoomElement2.getBoundingClientRect().width >= 30){
         zoomElement2.style.transform = `scale(${(zoom2 -= zoomSpeed2)})`
     }
+    console.log(zoomElement2.style.transform);
 })
 
 // END ZOOM SCRIPT
