@@ -17246,18 +17246,15 @@ textarea.form-control-lg {
 body {
   background-color: #000;
   color: #fff;
-  height: 500vh;
   margin: 0;
 }
 
 .workspace {
   transform: scale(1);
   height: 100vh;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  display: grid;
   place-items: center;
 }
 .workspace .container {
@@ -17288,45 +17285,6 @@ body {
 .workspace .container .cursor.typing {
   animation: none;
 }
-
-.workspace2 {
-  transform: scale(1);
-  height: 100vh;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: grid;
-  place-items: center;
-}
-.workspace2 .container2 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.workspace2 .container2 p {
-  font-size: 3rem;
-  fontweight: normal;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  overflow: hidden;
-  padding: 0.5rem;
-}
-.workspace2 .container2 .typed-text2 {
-  font-weight: bold;
-  color: orange;
-}
-.workspace2 .container2 .cursor2 {
-  display: inline-block;
-  width: 3px;
-  background-color: #ccc;
-  margin-left: 0.1rem;
-  animation: blink 1s infinite;
-}
-.workspace2 .container2 .cursor2.typing2 {
-  animation: none;
-}
 @keyframes blink {
   0% {
     background-color: #ccc;
@@ -17343,6 +17301,10 @@ body {
   100% {
     background-color: #ccc;
   }
+}
+
+#aboutMe {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
