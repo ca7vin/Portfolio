@@ -17249,16 +17249,25 @@ body {
   margin: 0;
 }
 
+header {
+  height: 100vh;
+}
+header li {
+  padding: 0 10px;
+}
+header a:hover {
+  font-weight: bold !important;
+}
+
 .workspace {
   transform: scale(1);
-  height: 100vh;
   width: 100%;
   top: 0;
   left: 0;
   place-items: center;
 }
 .workspace .container {
-  height: 100vh;
+  height: calc(100vh - 56px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17304,6 +17313,10 @@ body {
 }
 
 #aboutMe {
+  height: 100vh;
+}
+
+#contact {
   height: 100vh;
 }
 

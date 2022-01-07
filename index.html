@@ -9,11 +9,30 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="workspace">
+            <nav class="navbar navbar-expand-lg navbar-light bg-*">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" aria-current="page" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#aboutMe">About me</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#contact">Contact</a>
+                      </li>
+                  </div>
+                </div>
+              </nav>
             <div class="container d-flex flex-column">
                 <p>I am <span class="typed-text"></span><span class="cursor typing">&nbsp;</span></p>
-                <button type="button" class="btn btn-outline-warning"><a href="#aboutMe" class="text-warning text-decoration-none">About me</a></button>
+                <button type="button" class="btn btn-outline-warning mt-5"><a href="#aboutMe" class="text-warning text-decoration-none">More</a></button>
             </div>
         </div>
     </header>
@@ -22,23 +41,51 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 d-flex align-items-center justify-content-center pb-3">
-                    <h2 class="text-center text-warning">About me</h2>
+                    <h2 class="text-center text-warning fw-bold">About me</h2>
                 </div>
                 <div class="col-4 d-flex flex-column align-items-center justify-content-center px-3">
                     <a href="" class="text-decoration-none text-warning fa-5x"><i class="fab fa-html5"></i></a>
-                    <p class="text-start text-warning pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos rem itaque deleniti autem accusamus inventore exercitationem eligendi, quis maxime nulla eius nihil distinctio, dolores neque ipsum tenetur iure, repudiandae doloremque quas a quasi provident! Minus autem fugiat, facere accusamus veritatis hic placeat. Ducimus, at hic delectus adipisci quam inventore earum impedit, totam cum laboriosam, dolores consequuntur libero culpa? Mollitia.</p>
+                    <p class="text-start pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos rem itaque deleniti autem accusamus inventore exercitationem eligendi, quis maxime nulla eius nihil distinctio, dolores neque ipsum tenetur iure, repudiandae doloremque quas a quasi provident! Minus autem fugiat, facere accusamus veritatis hic placeat. Ducimus, at hic delectus adipisci quam inventore earum impedit, totam cum laboriosam, dolores consequuntur libero culpa? Mollitia.</p>
                 </div>
                 <div class="col-4 d-flex flex-column align-items-center justify-content-center px-3">
                     <a href="" class="text-decoration-none text-warning fa-5x"><i class="fab fa-css3-alt"></i></a>
-                    <p class="text-center text-warning pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos rem itaque deleniti autem accusamus inventore exercitationem eligendi, quis maxime nulla eius nihil distinctio, dolores neque ipsum tenetur iure, repudiandae doloremque quas a quasi provident! Minus autem fugiat, facere accusamus veritatis hic placeat. Ducimus, at hic delectus adipisci quam inventore earum impedit, totam cum laboriosam, dolores consequuntur libero culpa? Mollitia.</p>
+                    <p class="text-center pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos rem itaque deleniti autem accusamus inventore exercitationem eligendi, quis maxime nulla eius nihil distinctio, dolores neque ipsum tenetur iure, repudiandae doloremque quas a quasi provident! Minus autem fugiat, facere accusamus veritatis hic placeat. Ducimus, at hic delectus adipisci quam inventore earum impedit, totam cum laboriosam, dolores consequuntur libero culpa? Mollitia.</p>
                 </div>
                 <div class="col-4 d-flex flex-column align-items-center justify-content-center px-3">
                     <a href="" class="text-decoration-none text-warning fa-5x"><i class="fab fa-js"></i></a>
-                    <p class="text-end text-warning pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos rem itaque deleniti autem accusamus inventore exercitationem eligendi, quis maxime nulla eius nihil distinctio, dolores neque ipsum tenetur iure, repudiandae doloremque quas a quasi provident! Minus autem fugiat, facere accusamus veritatis hic placeat. Ducimus, at hic delectus adipisci quam inventore earum impedit, totam cum laboriosam, dolores consequuntur libero culpa? Mollitia.</p>
+                    <p class="text-end pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos rem itaque deleniti autem accusamus inventore exercitationem eligendi, quis maxime nulla eius nihil distinctio, dolores neque ipsum tenetur iure, repudiandae doloremque quas a quasi provident! Minus autem fugiat, facere accusamus veritatis hic placeat. Ducimus, at hic delectus adipisci quam inventore earum impedit, totam cum laboriosam, dolores consequuntur libero culpa? Mollitia.</p>
                 </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-outline-warning mt-5"><a href="#contact" class="text-warning text-decoration-none">More</a></button>
+              </div>
             </div>
         </div>
     </section>
+
+    <section class="mx-5 d-flex flex-column align-items-center justify-content-center" id="contact">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-12 d-flex align-items-center justify-content-center pb-3">
+                  <h2 class="text-center text-warning fw-bold">Contact</h2>
+              </div>
+              <div class="col-12 d-flex flex-column align-items-center justify-content-center px-3">
+                <input class="w-50 form-control mb-3" type="text" placeholder="Enter Full Name">
+                <input class="w-50 form-control mb-3" type="text" placeholder="Phone number">
+                <input class="w-50 form-control mb-3" type="text" placeholder="Email">
+                <input class="w-50 form-control mb-3" type="text" placeholder="Subject">
+                <textarea rows="5" type="textarea" class="form-control w-50" placeholder="Your text here"></textarea>
+                <button type="button" class="btn btn-outline-warning mt-5"><a href="#contact" class="text-warning text-decoration-none">Send</a></button>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+              <button type="button" class="btn btn-outline-warning mt-5"><a href="#home" class="text-warning text-decoration-none"><i class="fas fa-arrow-up"></i></a></button>
+            </div>
+          </div>
+      </div>
+  </section>
 
     <!-- JS -->
     <script src="./public/js/main.js" type="module"></script>
