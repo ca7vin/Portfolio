@@ -15,10 +15,10 @@
     <div class="workspace">
       <nav class="navbar navbar-expand-lg navbar-light bg-*">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon text-warning"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -27,6 +27,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link text-warning" href="#aboutMe">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-warning" href="#contact">Contact</a>
@@ -47,6 +50,28 @@
       <div class="row">
         <div class="col-12 d-flex align-items-center justify-content-center pb-3">
           <h2 class="text-center text-warning fw-bold">About me</h2>
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+          <img src="./public/img/profile.jpg" alt="" class="rounded-circle w-75">
+        </div>
+        <div class="col-8 d-flex flex-column align-items-center justify-content-center">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam esse quae minima aperiam reiciendis, laboriosam est officia incidunt magni eum provident sapiente quibusdam alias explicabo quaerat repellat excepturi obcaecati? Nesciunt nemo, qui facere accusamus ipsam doloribus. Nobis non quidem dolorum distinctio laudantium quo enim soluta laboriosam rem repudiandae aut maiores corporis est tempora aperiam hic, voluptates, mollitia eius! Natus nihil alias optio quos velit! Perspiciatis qui blanditiis odio laboriosam voluptas veniam officiis delectus, cum omnis quam deserunt necessitatibus ad tempore quasi officia natus labore, perferendis, voluptatum ut adipisci ea architecto quas hic totam. Obcaecati inventore suscipit nostrum voluptatum corrupti doloremque eius quisquam, ullam cum</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+          <button type="button" class="btn btn-outline-warning mt-5"><a href="#skills"
+              class="text-warning text-decoration-none">More</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-5 d-flex flex-column align-items-center justify-content-center" id="skills">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-center pb-3">
+          <h2 class="text-center text-warning fw-bold">Skills</h2>
         </div>
         <div class="col-4 d-flex flex-column align-items-center justify-content-center px-3">
           <a href="" class="text-decoration-none text-warning fa-5x"><i class="fab fa-html5"></i></a>
@@ -88,41 +113,14 @@
         <div class="col-12 d-flex align-items-center justify-content-center pb-3">
           <h2 class="text-center text-warning fw-bold">Contact</h2>
         </div>
-        <div class="col-6 d-flex flex-column align-items-center justify-content-center px-3">
-          <input class="w-100 form-control mb-3" type="text" placeholder="Enter Full Name">
-          <input class="w-100 form-control mb-3" type="text" placeholder="Phone number">
-          <input class="w-100 form-control mb-3" type="text" placeholder="Email">
-          <input class="w-100 form-control mb-3" type="text" placeholder="Subject">
-          <textarea rows="5" type="textarea" class="form-control w-100" placeholder="Your text here"></textarea>
+        <div class="col-12 d-flex flex-column align-items-center justify-content-center px-3">
+          <input class="w-75 form-control mb-3" type="text" placeholder="Enter Full Name">
+          <input class="w-75 form-control mb-3" type="text" placeholder="Phone number">
+          <input class="w-75 form-control mb-3" type="text" placeholder="Email">
+          <input class="w-75 form-control mb-3" type="text" placeholder="Subject">
+          <textarea rows="5" type="textarea" class="form-control w-75" placeholder="Your text here"></textarea>
           <button type="button" class="btn btn-outline-warning mt-5"><a href="#contact"
               class="text-warning text-decoration-none">Send</a></button>
-        </div>
-        <div class="col-6 d-flex flex-column align-items-center justify-content-center px-3 mb-5">
-          <div class="row pb-3">
-            <div class="col-6 d-flex align-items-center justify-content-center">
-              <a href="" class="text-decoration-none text-warning"><i class="fab fa-facebook-square fa-3x"></i></a>
-            </div>
-            <div class="col-6 d-flex align-items-center justify-content-center">
-              <span>calvin.vanderghinst</span>
-            </div>
-          </div>
-          <div class="row pb-3">
-            <div class="col-6 d-flex align-items-center justify-content-center">
-              <a href="" class="text-decoration-none text-warning"><i class="fab fa-linkedin fa-3x"></i></a>
-            </div>
-            <div class="col-6 d-flex align-items-center justify-content-center">
-              <span>Calvin Van der Ghinst</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6 d-flex align-items-center justify-content-center">
-              <a href="" class="text-decoration-none text-warning"><i class="fas fa-envelope-square fa-3x"></i></a>
-            </div>
-            <div class="col-6 d-flex align-items-center justify-content-center">
-              <span>ca7vin@gmail.com</span>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -131,6 +129,7 @@
 
   <!-- JS -->
   <script src="./public/js/main.js" type="module"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
