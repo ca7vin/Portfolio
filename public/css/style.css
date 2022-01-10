@@ -17259,6 +17259,11 @@ header a:hover {
   font-weight: bold !important;
 }
 
+footer .container-fluid, footer .container-sm, footer .container-md, footer .container-lg, footer .container-xl, footer .container-xxl {
+  height: 200px;
+  display: flex;
+}
+
 .workspace {
   transform: scale(1);
   width: 100%;
