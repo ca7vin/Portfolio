@@ -21,7 +21,7 @@ function type() {
 
 function erase() {
     if (charIndex > 0) {
-        typedTextSpan.textContent = textArray[textArrayIndex].substring(0,charIndex -1)
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1)
         charIndex--;
         setTimeout(erase, erasingDelay)
     } else {
@@ -33,7 +33,7 @@ function erase() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     setTimeout(type, newTextDelay + 250);
 })
 
@@ -56,7 +56,7 @@ function type2() {
         setTimeout(type2, typingDelay2);
     }
 }
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     setTimeout(type2, newTextDelay2 + 250);
 })
 
@@ -92,3 +92,105 @@ document.addEventListener("DOMContentLoaded", function() {
 // })
 
 // END ZOOM SCRIPT
+
+
+// ANIMATE OPACITY
+
+
+
+console.log(window);
+window.addEventListener("scroll", () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 650) {
+        $("#profilePic").animate({
+            opacity: "100%"
+        }, 1500)
+        $("#aboutH2").animate({
+            opacity: "100%"
+        }, 1500)
+    }
+    if (window.scrollY >= 1500) {
+        $("i").animate({
+            opacity: "100%"
+        }, 500)
+        // ANIMATE PROGRESSBAR
+        let progress1 = document.getElementsByClassName("progress1")[0]
+        let progress2 = document.getElementsByClassName("progress2")[0]
+        let progress3 = document.getElementsByClassName("progress3")[0]
+        let progress4 = document.getElementsByClassName("progress4")[0]
+        let progress5 = document.getElementsByClassName("progress5")[0]
+        
+        progress1.animate([
+            {
+                width: "65%",
+            }
+        
+        ],{
+            duration: 3000,
+            iteration: 1,
+            fill: "forwards"
+        })
+        
+        progress2.animate([
+            {
+                width: "65%",
+            }
+        
+        ],{
+            duration: 3000,
+            iteration: 1,
+            fill: "forwards"
+        })
+        
+        progress3.animate([
+            {
+                width: "65%",
+            }
+        
+        ],{
+            duration: 3000,
+            iteration: 1,
+            fill: "forwards"
+        })
+        
+        progress4.animate([
+            {
+                width: "65%",
+            }
+        
+        ],{
+            duration: 3000,
+            iteration: 1,
+            fill: "forwards"
+        })
+        
+        progress5.animate([
+            {
+                width: "65%",
+            }
+        
+        ],{
+            duration: 3000,
+            iteration: 1,
+            fill: "forwards"
+        })
+        // ANIMATE PROGRESS END
+    }
+    if (window.scrollY >= 2500) {
+        $("Input").animate({
+            opacity: "100%"
+        }, 1500)
+        $("textArea").animate({
+            opacity: "100%"
+        }, 1500)
+        $("#contactH2").animate({
+            opacity: "100%"
+        })
+        $("#btnCont").animate({
+            opacity: "100%"
+        })
+    }
+})
+
+
+

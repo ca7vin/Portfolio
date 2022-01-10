@@ -17259,11 +17259,6 @@ header a:hover {
   font-weight: bold !important;
 }
 
-footer .container-fluid, footer .container-sm, footer .container-md, footer .container-lg, footer .container-xl, footer .container-xxl {
-  height: 200px;
-  display: flex;
-}
-
 .workspace {
   transform: scale(1);
   width: 100%;
@@ -17324,9 +17319,31 @@ footer .container-fluid, footer .container-sm, footer .container-md, footer .con
 #skills {
   height: 100vh;
 }
+#skills i {
+  opacity: 0;
+}
 
 #contact {
   height: 100vh;
+}
+#contact h2, #contact .h2 {
+  opacity: 0;
+}
+
+#profilePic {
+  opacity: 0;
+}
+
+#aboutH2 {
+  opacity: 0;
+}
+
+#formInput {
+  opacity: 0;
+}
+
+#btnCont {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
