@@ -100,7 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 console.log(window);
 window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 650) {
         $("#profilePic").animate({
             opacity: "100%"
@@ -197,17 +196,27 @@ let switchLight = document.getElementById('btnSwitchL')
 let switchDark = document.getElementById('btnSwitchD')
 let body = document.body
 let allP = document.querySelectorAll("p")
+let allProgressDiv = document.querySelectorAll(".progress")
+console.log(allProgressDiv);
 
 switchLight.addEventListener('click', () => {
     body.style.backgroundColor = "White"
     allP.forEach(element => {
         element.style.color = "Black"
     });
+    allProgressDiv.forEach(element => {
+        element.style.backgroundColor = "grey"
+    });
 })
 switchDark.addEventListener('click', () =>{
     body.style.backgroundColor = "Black"
     allP.forEach(element => {
-        element.style.color = "White"
+        element.style.color = "white"
+        console.log(element.style.backgroundColor);
+    });
+    allProgressDiv.forEach(element => {
+        element.style.backgroundColor = "darkgrey"
+        console.log(element.style.backgroundColor);
     });
 })
 
