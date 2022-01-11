@@ -96,17 +96,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ANIMATE OPACITY
 
-
-
 console.log(window);
 window.addEventListener("scroll", () => {
+    console.log(window.scrollY);
     if (window.scrollY >= 650) {
         $("#profilePic").animate({
             opacity: "100%"
         }, 1500)
         $("#aboutH2").animate({
             opacity: "100%"
-        }, 1500)
+        }, 2000)
     }
     if (window.scrollY >= 1500) {
         $("i").animate({
@@ -125,7 +124,7 @@ window.addEventListener("scroll", () => {
             }
         
         ],{
-            duration: 3000,
+            duration: 1000,
             iteration: 1,
             fill: "forwards"
         })
@@ -136,7 +135,7 @@ window.addEventListener("scroll", () => {
             }
         
         ],{
-            duration: 3000,
+            duration: 1500,
             iteration: 1,
             fill: "forwards"
         })
@@ -147,7 +146,7 @@ window.addEventListener("scroll", () => {
             }
         
         ],{
-            duration: 3000,
+            duration: 2000,
             iteration: 1,
             fill: "forwards"
         })
@@ -158,7 +157,7 @@ window.addEventListener("scroll", () => {
             }
         
         ],{
-            duration: 3000,
+            duration: 2500,
             iteration: 1,
             fill: "forwards"
         })
@@ -175,7 +174,7 @@ window.addEventListener("scroll", () => {
         })
         // ANIMATE PROGRESS END
     }
-    if (window.scrollY >= 2500) {
+    if (window.scrollY >= 3000) {
         $("Input").animate({
             opacity: "100%"
         }, 1500)
@@ -184,10 +183,25 @@ window.addEventListener("scroll", () => {
         }, 1500)
         $("#contactH2").animate({
             opacity: "100%"
-        })
+        }, 1000)
         $("#btnCont").animate({
             opacity: "100%"
+        }, 2000)
+    }
+    // ANIMATE BACKGRND
+    if (window.scrollY >= 2400){
+        $("#BackgroundProH2").animate({
+            opacity: "100%"
         })
+        $("h2").animate({
+            opacity: "100%"
+        }, 1500)
+        $("h5").animate({
+            opacity: "100%"
+        }, 2000)
+        $("p").animate({
+            opacity: "100%"
+        }, 2500)
     }
 })
 
@@ -196,16 +210,19 @@ let switchLight = document.getElementById('btnSwitchL')
 let switchDark = document.getElementById('btnSwitchD')
 let body = document.body
 let allP = document.querySelectorAll("p")
+let allH5 = document.querySelectorAll("h5")
 let allProgressDiv = document.querySelectorAll(".progress")
-console.log(allProgressDiv);
 
 switchLight.addEventListener('click', () => {
     body.style.backgroundColor = "White"
     allP.forEach(element => {
         element.style.color = "Black"
     });
+    allH5.forEach(element => {
+        element.style.color = "Black"
+    });
     allProgressDiv.forEach(element => {
-        element.style.backgroundColor = "grey"
+        element.style.backgroundColor = "#d3d3d3"
     });
 })
 switchDark.addEventListener('click', () =>{
@@ -214,8 +231,12 @@ switchDark.addEventListener('click', () =>{
         element.style.color = "white"
         console.log(element.style.backgroundColor);
     });
+    allH5.forEach(element => {
+        element.style.color = "white"
+        console.log(element.style.backgroundColor);
+    });
     allProgressDiv.forEach(element => {
-        element.style.backgroundColor = "darkgrey"
+        element.style.backgroundColor = "#242424"
         console.log(element.style.backgroundColor);
     });
 })

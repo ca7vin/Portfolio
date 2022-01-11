@@ -17330,11 +17330,22 @@ header a:hover {
   opacity: 0;
 }
 
+#BackgroundPro {
+  height: 100vh;
+}
+#BackgroundPro h2, #BackgroundPro .h2, #BackgroundPro h5, #BackgroundPro .h5, #BackgroundPro p {
+  opacity: 0;
+}
+
 #profilePic {
   opacity: 0;
 }
 
 #aboutH2 {
+  opacity: 0;
+}
+
+#BackgroundProH2 {
   opacity: 0;
 }
 
@@ -17344,6 +17355,10 @@ header a:hover {
 
 #btnCont {
   opacity: 0;
+}
+
+.progress {
+  background-color: #242424;
 }
 
 /*# sourceMappingURL=style.css.map */
