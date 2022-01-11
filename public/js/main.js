@@ -192,5 +192,22 @@ window.addEventListener("scroll", () => {
     }
 })
 
+// 
+let switchLight = document.getElementById('btnSwitchL')
+let switchDark = document.getElementById('btnSwitchD')
+let body = document.body
+let allP = document.querySelectorAll("p")
 
+switchLight.addEventListener('click', () => {
+    body.style.backgroundColor = "White"
+    allP.forEach(element => {
+        element.style.color = "Black"
+    });
+})
+switchDark.addEventListener('click', () =>{
+    body.style.backgroundColor = "Black"
+    allP.forEach(element => {
+        element.style.color = "White"
+    });
+})
 
