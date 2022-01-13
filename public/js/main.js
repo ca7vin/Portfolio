@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 console.log(window);
 window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if (window.scrollY >= 650) {
         $("#profilePic").animate({
             opacity: "100%"
@@ -224,7 +224,7 @@ switchLight.addEventListener('click', () => {
     allProgressDiv.forEach(element => {
         element.style.backgroundColor = "#d3d3d3"
     });
-})
+}) 
 switchDark.addEventListener('click', () =>{
     body.style.backgroundColor = "Black"
     allP.forEach(element => {
