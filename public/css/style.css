@@ -17245,8 +17245,8 @@ textarea.form-control-lg {
 
 body {
   background-color: #000;
-  color: #fff;
   margin: 0;
+  opacity: 0;
 }
 
 header {
@@ -17375,6 +17375,23 @@ header a:hover {
 }
 #svgGroup path {
   stroke: orange;
+}
+
+@keyframes animate-out {
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animate-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

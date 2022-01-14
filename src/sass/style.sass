@@ -9,8 +9,8 @@
     font-family: "FiraCode"
 body
     background-color: #000
-    color: #fff
     margin: 0
+    opacity: 0
 header
     height: 100vh
     li
@@ -97,3 +97,16 @@ header
     stroke-dasharray: 1000
     path
         stroke: orange
+
+
+@keyframes animate-out
+    0%
+        opacity: 100
+    100%
+        opacity: 0
+
+@keyframes animate-in
+    0%
+        opacity: 0
+    100%
+        opacity: 100   

@@ -1,3 +1,11 @@
+
+let switchLight = document.getElementById('btnSwitchL')
+let switchDark = document.getElementById('btnSwitchD')
+let body = document.body
+let allP = document.querySelectorAll("p")
+let allH5 = document.querySelectorAll("h5")
+let allProgressDiv = document.querySelectorAll(".progress")
+
 // START TYPING SCRIPT
 const typedTextSpan = document.querySelector(".typed-text")
 
@@ -59,6 +67,16 @@ function type2() {
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(type2, newTextDelay2 + 250);
 })
+
+window.addEventListener('load', () => {
+        body.style.animation = "animate-in 3s forwards";
+})
+
+
+// body.addEventListener("onload", () =>{
+//         body.style.animation = "animate-in 3s forwards";
+//         console.log("coucou");
+// })
 
 
 // END TYPING SCRIPT
@@ -206,12 +224,16 @@ window.addEventListener("scroll", () => {
 })
 
 // 
-let switchLight = document.getElementById('btnSwitchL')
-let switchDark = document.getElementById('btnSwitchD')
-let body = document.body
-let allP = document.querySelectorAll("p")
-let allH5 = document.querySelectorAll("h5")
-let allProgressDiv = document.querySelectorAll(".progress")
+
+body.style.backgroundColor = "Black"
+allP.forEach(element => {
+    element.style.color = "white"
+    console.log(element.style.backgroundColor);
+});
+allH5.forEach(element => {
+    element.style.color = "white"
+    console.log(element.style.backgroundColor);
+});
 
 switchLight.addEventListener('click', () => {
     body.style.backgroundColor = "White"
@@ -240,4 +262,6 @@ switchDark.addEventListener('click', () =>{
         console.log(element.style.backgroundColor);
     });
 })
+
+
 
