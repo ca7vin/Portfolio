@@ -273,4 +273,14 @@ switchDark.addEventListener('click', () =>{
 })
 
 
+let myPath2 = document.getElementsByTagName('path')[0];
+let length2 = myPath2.getTotalLength();
 
+anime({
+    targets: '#svgGroup2',
+    strokeDashoffset: [anime.setDashoffset, 2000],
+    easing: 'linear',
+    duration: 3000,
+    direction: 'forwards',
+    loop: false
+  });

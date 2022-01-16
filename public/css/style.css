@@ -17396,6 +17396,13 @@ header a:hover {
   stroke: orange;
 }
 
+#svgGroup2 {
+  stroke-dasharray: 1000;
+}
+#svgGroup2 path {
+  stroke: orange;
+}
+
 @keyframes animate-out {
   0% {
     opacity: 100;
