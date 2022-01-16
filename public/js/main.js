@@ -67,11 +67,20 @@ function type2() {
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(type2, newTextDelay2 + 250);
 })
-
 window.addEventListener('load', () => {
         body.style.animation = "animate-in 3s forwards";
 })
 
+// document.onreadystatechange = function(){
+//     if (document.readyState === "complete") {
+//         body.style.animation = "animate-in 3s forwards";
+//     }
+//     else {
+//        window.onload = function () {
+//         body.style.animation = "animate-in 3s forwards";
+//        };
+//     };
+// }
 
 // body.addEventListener("onload", () =>{
 //         body.style.animation = "animate-in 3s forwards";
