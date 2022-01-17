@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0
+}
+
+#animeZone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#svgGroup {
+    stroke-dasharray: 1000;
+  }
+#svgGroup > path {
+    stroke: orange;
+    stroke-width: 2px;
+}
+
+
+.animate-in {
+    -webkit-animation: fadeIn 5s ease-in;
+    animation: fadeIn 5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity 5s;
+    transition: opacity 5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
