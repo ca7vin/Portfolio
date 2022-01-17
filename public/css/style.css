@@ -17382,11 +17382,11 @@ header a:hover {
   height: 50px;
 }
 #progressZone .progress {
-  height: 5px;
+  height: 1px;
   width: 100%;
 }
-#progressZone .progress .progress-brands {
-  height: 5px;
+#progressZone .progress .progress-bar {
+  height: 1px;
 }
 
 #svgGroup {
@@ -17397,7 +17397,7 @@ header a:hover {
 }
 
 #svgGroup2 {
-  stroke-dasharray: 1000;
+  stroke-dasharray: 400;
 }
 #svgGroup2 path {
   stroke: orange;

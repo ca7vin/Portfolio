@@ -158,7 +158,7 @@ window.addEventListener("scroll", () => {
         
         progress2.animate([
             {
-                width: "65%",
+                width: "40%",
             }
         
         ],{
@@ -169,7 +169,7 @@ window.addEventListener("scroll", () => {
         
         progress3.animate([
             {
-                width: "65%",
+                width: "25%",
             }
         
         ],{
@@ -180,7 +180,7 @@ window.addEventListener("scroll", () => {
         
         progress4.animate([
             {
-                width: "65%",
+                width: "45%",
             }
         
         ],{
@@ -191,7 +191,7 @@ window.addEventListener("scroll", () => {
         
         progress5.animate([
             {
-                width: "65%",
+                width: "35%",
             }
         
         ],{
@@ -245,7 +245,7 @@ allH5.forEach(element => {
 });
 
 switchLight.addEventListener('click', () => {
-    body.style.backgroundColor = "White"
+    body.style.backgroundColor = "#b0b0b0"
     allP.forEach(element => {
         element.style.color = "Black"
     });
@@ -280,7 +280,7 @@ anime({
     targets: '#svgGroup2',
     strokeDashoffset: [anime.setDashoffset, 2000],
     easing: 'linear',
-    duration: 3000,
-    direction: 'forwards',
-    loop: false
+    duration: 10000,
+    direction: 'alternate',
+    loop: true
   });
